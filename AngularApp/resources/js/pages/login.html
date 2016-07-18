@@ -1,0 +1,21 @@
+<div class="login-register">
+    <div class="signin-box">
+
+        <img src="resources/css/img/nuiglogo.png" class="loginlogo" />
+        <div class="form-heading">
+            <p>Login</p>
+        </div>
+        <form class="login-form" ng-submit="login()" novalidate>
+            <input type="text" id="username" ng-model="username" placeholder="Username" required>
+            <input type="password" id="password" ng-model="password" placeholder="Password" required>
+            <button type="submit" class="submit-btn"></button>
+        </form>
+        <div class="login-failed-div" ng-if="loginFailed">
+            <p>Invalid Details</p>
+        </div>
+        <p class="reg-success-msg">{{regMessage}}</p>
+        
+        <p class="sign-up">Don't have an account - <a class="sign-up-btn" ui-sref="register">Sign-up</a></p>
+
+    </div>
+</div>

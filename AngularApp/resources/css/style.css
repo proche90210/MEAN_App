@@ -1,0 +1,423 @@
+/*------------------------------------------------------------*/
+/*----------------------- The whole page ---------------------*/
+/*------------------------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+
+/*------------------------------------------------------------*/
+/*----------------------- Login Display ----------------------*/
+/*------------------------------------------------------------*/
+
+.login-register{ 
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/login.jpg); 
+    background-size: cover; 
+    background-position: center; 
+    height: 100vh;
+}
+
+.signin-box{
+    position: absolute;
+    width: 35%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loginlogo {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.form-heading{
+    background-color: #e57e22;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+input {
+    margin-top: 0px;
+    width: 100%;
+    padding: 5px 0;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    border: 2px solid #e57e22;
+    border-radius: 5px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.submit-btn{
+    background:none;
+    border:none;
+    position: fixed;
+}
+
+.sign-up{
+    text-align: center;
+    font-size: 80%;
+    color: #fff;
+}
+
+.sign-up-btn:link,
+.sign-up-btn:visited{
+    text-decoration: none;
+    color: #e57e22;
+}
+
+.login-failed-div, .reg-success-msg, .reg-failed-div{
+    width: 100%;
+    font-size: 70%;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.login-failed-div, .reg-failed-div{
+    background-color: red;
+}
+
+.reg-success-msg{
+    background-color: green;
+}
+
+/*------------------------------------------------------------*/
+/*----------------------- Home Display -----------------------*/
+/*------------------------------------------------------------*/
+
+#logo{
+    margin-left: 470px;
+    margin-bottom: 40px;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/nuig.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.hero-text-box{
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    margin-top: 0;
+    color: #fff;
+    font-size: 200%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+h2{
+    font-size: 160%;
+    margin-bottom: 50px;
+    color: #fff;
+    font-weight: 300;
+    text-align: center;
+}
+
+
+
+/*------------ Nav-Buttons --------------*/
+
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.3s, color 0.3s;
+
+}
+
+.btn-ghost{
+    display: inline-block;
+    margin-left: 44%;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited{
+    border: 1px solid #e57e22;
+    color: #e57e22;
+}
+
+
+
+.btn-ghost:hover,
+.btn-ghost:active{
+    background-color: #e57e22;
+    color: #fff;
+    border: 1px solid #e57e22;
+}
+
+
+
+
+/*------------------------------------------------------------*/
+/*-----------------------     Data ---------------------------*/
+/*------------------------------------------------------------*/
+
+
+#data, #data-display{
+    height: 90vh;
+}
+
+
+.table-data{
+    width: 100%;
+    color: #e57e22;
+}
+
+#data{
+    padding-left: 50px;
+    margin: 0;
+}
+
+th{
+    text-align: left;
+    color: #555;
+    font-weight: 300;
+}
+
+td {    
+    text-align: left;
+    font-size: 80%;
+    color: rgb(107, 137, 237);
+}
+
+
+/* ------------- D3 Header ----------------*/
+.d3-header{
+    margin-top: 50px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+
+/*-------------- D3 Buttons ---------------*/
+
+.d3-buttons{
+    float: right;
+}
+
+.btn-d3:link,
+.btn-d3:visited{
+    color: #555;
+    border: 1px solid rgb(107, 137, 237);
+    margin-right: 30px;
+}
+
+.btn-d3:hover,
+.btn-d3:active{
+    background-color: rgb(107, 137, 237);
+    color: #fff;
+    border: 1px solid rgb(107, 137, 237);
+}
+
+
+
+/*-------------- D3 Graphs ----------------*/
+#data-display{
+    margin: 0;
+}
+
+/* CSS for the in D3 circle */
+.circleText{
+    color: #333333;
+    font-family: sans-serif;
+    font-size: 18px;
+    text-shadow: 2px 2px 5px grey;
+}
+
+.circle{
+    display: block;
+    margin: 10% 12%;
+    padding: 100px;
+}
+
+/* CSS for the in D3 graph */
+
+.graph{
+    display: block;
+    margin: 0 auto;
+}
+
+.pathClass{
+    stroke-width: 2px;
+    stroke: blue;
+    fill: none;
+}
+
+.axis path{
+    fill: none;
+    stroke: #777;
+    shape-rendering: crispEdges;
+}
+
+.y.label, .x.label{
+    color: #333333;
+    font-family:  sans-serif;
+    font-size: 16px;
+    text-shadow: 4px 4px 5px grey;
+
+}
+
+
+/*------------------------------------------------------------*/
+/*----------------------     Raspberry Pi --------------------*/
+/*------------------------------------------------------------*/
+
+.pi-header{
+    margin-top: 50px;
+}
+
+#pi-description{
+    padding-left: 15px;
+    padding-top: 50px;
+    text-align: justify;
+}
+
+#temp-sensor-image{
+    display: block;
+    margin: 0 auto;
+    height: 25%;
+    width: 25%;
+}
+
+#pi, #raspberrylogo{
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh; 
+}
+
+#pi{
+    background-image: url(img/pi.jpeg);
+    background-size: 100%;
+}
+
+#raspberrylogo{
+    background-image: url(img/raspberrylogo.png);
+    background-size: 45%;
+}
+
+
+/*------------------------------------------------------------*/
+/*----------------------  MEAN STACK -------------------------*/
+/*------------------------------------------------------------*/
+
+h3{
+    font-size: 160%;
+    font-weight: 300;
+    text-align: center;
+    padding-bottom: 40px;
+    letter-spacing: 1px;
+}
+
+h3:after{
+    display: block;
+    height: 3px;
+    background-color: rgb(107, 137, 237);
+    content: " ";
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+
+#mongo-logo, #express-logo, #angular-logo, #node-logo{
+    height: 45%;
+    width: 45%;
+    margin-left: 50px;
+    margin-top: 40px;
+}
+
+.mean-description{
+    text-align: center;
+    line-height: 150%;
+    width: 60%;
+    margin-left: 20%;
+}
+
+.mean-box{
+    padding: 1%;
+}
+
+.mean-box p{
+    font-size: 85%;
+    line-height: 150%;
+}
+
+h4{
+    font-size: 120%;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+
+/*------------------------------------------------------------*/
+/*------------------------  Footer ---------------------------*/
+/*------------------------------------------------------------*/
+
+.footer{
+    margin-top: 100px;
+    height: 30vh;
+    background-color: #2c3e50;
+}
+
+h5{
+    padding-top: 50px;
+    font-size: 110%;
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
+}
+
+.footer p{
+    padding-top: 5px;
+    font-size: 70%;
+    text-align: center;
+    color: beige;
+    font-weight: 300;
+}
+
+
+#logo-footer{
+    display: block;
+    margin: 5px auto;
+    width: 8%;
+    height: 18%;
+}

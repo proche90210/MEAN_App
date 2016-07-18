@@ -1,0 +1,93 @@
+        <header>
+            <div class="hero-text-box">
+                <img src="resources/css/img/nuiglogo.png" alt="nuiglogo" id="logo" />
+                <h1>Peter Roche</h1>
+                <h2>Final Year Project</h2>
+                <h2>Welcome {{ userDetails.username | capitalize }}</h2>
+                <div class="nav-buttons">
+                    <a class="btn btn-ghost" href="#/login" ng-click="logout()">Logout</a>
+                </div>
+            </div>
+        </header>
+        
+        <div class="row" id="d3">
+            <h3 class="d3-header">D3.js</h3>
+            <div class="col span-1-of-4" id="data">
+                <table class="table-data">
+                  <tr>
+                    <th>Time(s)</th>
+                    <th>Temperature(C)</th>		
+                  </tr>
+                  <tr ng-repeat="x in mongoData">
+                    <td>{{x.time}}</td>
+                    <td>{{x.temp}}</td>		
+                  </tr>
+                </table>
+            </div>
+
+            <div class="col span-3-of-4" id="data-display">
+                <div class="d3-buttons">
+                    <a class="btn btn-d3" ui-sref=".circle">D3-Circles</a>
+                    <a class="btn btn-d3" ui-sref=".graph">D3-Graph</a>
+                </div>
+                <div ui-view></div>
+            </div>
+        </div>
+            
+        <div class="row">
+            <div class="col span-1-of-3" id="pi"></div>
+            <div class="col span-1-of-3">
+                <h3 class="pi-header">Raspberry Pi</h3>
+                <img src="resources/img/DS18B20.jpg" alt="DS18B20" id="temp-sensor-image" />
+                <p id="pi-description">The project uses a Raspberry Pi 2, breadboard and a DS18B20 temperature sensor. The GPIO pins on the Pi are wired to the breadboard and in turn to the temperature sensor via a resistor. The DS18B20 is a 1-wire temperature sensor with an accuracy of around 0.5°C over most of it's range.</p>
+            </div>
+            <div class="col span-1-of-3" id="raspberrylogo"></div>
+        </div>
+        
+        <section class="section-mean" id="mean">
+            <div class="row">
+                <h3>MEAN Stack</h3>
+                <p class="mean-description">MEAN is a free and open source JavaScript software stack for building dynamic web sites and web applications</p>
+            </div>
+            
+            <div class="row">
+                <div class="col span-1-of-4">
+                    <img src="resources/img/mongodb.png" alt="mongo logo" id="mongo-logo" />
+                </div>
+                <div class="col span-1-of-4">
+                    <img src="resources/img/expressjs.png" alt="expressjs logo" id="express-logo" />
+                </div>
+                <div class="col span-1-of-4">
+                    <img src="resources/img/angularjs.jpg" alt="angularjs logo" id="angular-logo" />
+                </div>
+                <div class="col span-1-of-4">
+                    <img src="resources/img/nodejs.png" alt="nodejs logo" id="node-logo"/>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col span-1-of-4 mean-box">
+                    <h4>Mongo</h4>
+                    <p>MongoDB (from humongous) is a cross-platform document-oriented database. Classified as a NoSQL database, MongoDB eschews the traditional table-based relational database structure in favor of JSON-like documents. </p>
+                </div>
+                <div class="col span-1-of-4 mean-box">
+                    <h4>ExpressJS</h4>
+                    <p>Express.js is a Node.js web application server framework, designed for building single-page, multi-page, and hybrid web applications. It is the de facto standard server framework for node.js. </p>
+                </div>
+                <div class="col span-1-of-4 mean-box">
+                    <h4>AngularJS</h4>
+                    <p>Angular.js is an open-source web application framework mainly maintained by Google and by a community of individuals and corporations to address many of the challenges encountered in developing single-page applications. </p>
+                </div>
+                <div class="col span-1-of-4 mean-box">
+                    <h4>NodeJS</h4>
+                    <p>Node.js is an open-source, cross-platform runtime environment for developing server-side Web applications.  </p>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <div class="footer">
+                <h5>This project was developed for the Software Design and Development Course<br>National University of Ireland, Galway</h5>            <p>Copyright © 2016 Peter Roche</p>
+                <img src="resources/css/img/nuiglogo.png" alt="nuiglogo" id="logo-footer" />
+            </div>
+        </footer>

@@ -1,0 +1,64 @@
+
+/* CSS for the in D3 circle */
+.circleText{
+  color: #333333;
+  font-family: sans-serif;
+  font-size: 15px;
+  text-shadow: 2px 2px 5px grey;
+}
+
+.circle{
+  z-index: 3;
+  padding: 60px;
+  position: absolute;
+  top: 325px;
+
+  left: 50%;
+
+  -webkit-transform: translate(-50%, -50%);
+}
+
+/* CSS for the in D3 graph */
+
+.graph{
+  z-index: 3;
+  position: absolute;
+
+  font-family:  sans-serif;
+  font-size: 12px;
+
+  top: 270px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+}
+
+.pathClass{
+  stroke-width: 1px;
+  stroke: blue;
+  fill: none;
+}
+
+.axis path{
+  fill: none;
+  stroke: #777;
+  shape-rendering: crispEdges;
+}
+
+.y.label, .x.label{
+  color: #333333;
+  font-family:  sans-serif;
+  font-size: 12px;
+  text-shadow: 4px 4px 5px grey;
+
+}
+
+
+.card{
+  position: relative;
+  top: 30px;
+}
+
+.item, .title{
+  text-align: center;
+}
+
